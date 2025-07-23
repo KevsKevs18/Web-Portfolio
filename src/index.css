@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+*{
+   
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+:root{
+    --bg-color: #fafafa;
+}
+
+body{
+    background-color: var(--br-color);
+    overflow-x: hidden;
+    transition: margin-left .5s;
+     margin: 0;
+    padding: 0;
+}
