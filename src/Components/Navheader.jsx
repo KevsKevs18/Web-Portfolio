@@ -3,7 +3,7 @@ import profile from '../assets/Kevin.JPG'
 
 const Navheader = ({openNav}) => {
   return (
-    <div className='h-[4rem] w-full p-2 border-b border-gray-300 sticky top-0 bg-bgcolor lg:hidden'>
+    <div className='h-[4rem] w-full p-2 border-b border-gray-300 sticky top-0 bg-bgcolor stickey z-[50] md:hidden'>
         <div className='flex flex-row justify-between w-full h-full items-center'>
             <button className='openBtn visible' onClick={openNav}>
                 <span className='ri-menu-5-line text-[1.5rem]'></span>

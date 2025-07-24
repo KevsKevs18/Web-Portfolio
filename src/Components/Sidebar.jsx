@@ -6,7 +6,7 @@ const Sidebar = ({isOpen, closeNav}) => {
 
   return (
     <div className={`flex flex-col bg-sidebar justify-start fixed w-0 h-full shadow-lg rounded py-4 fixed z-[9999] top-0 left-0 overflow-hidden transition-[0.5s] 
-    ${isOpen ? 'w-[13rem]' : 'w-0'} lg:w-[13rem] lg:z-[0] lg:sticky lg:mt-4 lg:rounded-xl`}>
+    ${isOpen ? 'w-[13rem]' : 'w-0'} md:w-[13rem] md:z-[0] md:sticky md:mt-4 md:rounded-xl`}>
 
         <div className="flex flex-col w-full h-[15rem] flex-wrap pl-4">
         <button className='closeBtn ml-auto mr-2 text-bgcolor lg:hidden' onClick={closeNav}><span className='ri-close-line text-[1.5rem] hover:text-blue-100'></span></button>
