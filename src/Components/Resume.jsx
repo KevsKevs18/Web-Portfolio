@@ -22,7 +22,7 @@ const download = () => {
           <button className='text-[1rem] px-4 font-Londrina font-bold border rounded-lg border-blackg' onClick={download}><span className='ri-file-download-line mr-2'></span>Download</button>
           </div>
           <div className='pdf-container w-[90%] h-full bg-sidebar'>
-            <iframe src="https://github.com/KevsKevs18/Web-Portfolio/blob/697bcf63b2b9927ff88a1e1b9f8ce915ab589614/public/resume.pdf" type="application/pdf" className='w-full h-full'/>
+            <iframe src="https://github.com/KevsKevs18/Web-Portfolio/blob/697bcf63b2b9927ff88a1e1b9f8ce915ab589614/public/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" className='w-full h-full'/>
           </div>
     </div>
   )
