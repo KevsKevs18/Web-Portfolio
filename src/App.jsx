@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/Web-Portfolio/">
+      <Router>
         <div className="flex flex-row w-full h-screen bg-bodycolor">
           <Sidebar isOpen={isOpen} closeNav={closeNav} />
           <main className="flex flex-col w-full h-full md:px-4 md:pt-4">
