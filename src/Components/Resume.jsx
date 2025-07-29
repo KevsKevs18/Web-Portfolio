@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../assets/resume.pdf'
+import resume from '../assets/Resume.jpg'
 
 const Resume = () => {
 
@@ -21,8 +21,8 @@ const download = () => {
           </h4>
           <button className='text-[1rem] px-4 font-Londrina font-bold border rounded-lg border-blackg' onClick={download}><span className='ri-file-download-line mr-2'></span>Download</button>
           </div>
-          <div className='pdf-container w-[90%] h-full bg-sidebar'>
-            <iframe src="https://github.com/KevsKevs18/Web-Portfolio/blob/697bcf63b2b9927ff88a1e1b9f8ce915ab589614/public/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" className='w-full h-full'/>
+          <div className='pdf-container w-[90%] h-[70%] bg-sidebar flex justify-center overflow-y-auto mt-4 pt-2 rounded-xl'>
+            <img src={resume} className='w-[80%] h-[500px] md:w-[60%] block'/>
           </div>
     </div>
   )
