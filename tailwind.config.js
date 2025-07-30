@@ -7,12 +7,16 @@ export default {
         bgcolor: "#fafafa",
         sidebar: "#141428",
         bodycolor: "#E6E6E6",
+        customBlue: "#90E0EF",
         'black-g':"#000000",
         'gray-g':"#4D4855",
         experience:"#baffc9",
         certificate:"#ffb3ba",
         projects:"#bae1ff",
         techno:"#ffdfba",
+      },
+      boxShadow:{
+          shadowLight: '6px 6px 12px #bababa, -6px -6px 12px #ffffff',
       },
       screens:{
           sm: '640px', //Small tablets
@@ -27,6 +31,7 @@ export default {
       fontFamily:{
         Gothic: ['Special Gothic Expanded One', 'sans-serif'],
         Londrina: ['Londrina Solid', 'sans-serif'],
+        Rubik: ['Rubik', 'sans-serif'],
       },
       animation:{
         blink: 'blink 1s step-start infinite',
@@ -40,6 +45,8 @@ export default {
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }
 
