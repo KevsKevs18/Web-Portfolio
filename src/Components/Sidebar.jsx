@@ -16,7 +16,7 @@ const clickactive = () => {
 
 
   return (
-    <div className={`flex flex-col bg-bgcolor justify-start fixed w-0 h-screen shadow-lg py-4 fixed z-[9999] top-0 left-0 overflow-hidden transition-[0.5s] 
+    <div className={`flex flex-col bg-bgcolor justify-start fixed w-0 h-[100dvh] shadow-lg py-4 fixed z-[9999] top-0 left-0 overflow-hidden transition-[0.5s] 
     ${isOpen ? 'w-[13rem]' : 'w-0'} md:w-[13rem] md:z-[0] md:sticky md:mt-4 md:rounded-xl md:ml-2`}>
 
         <div className="flex flex-col w-full h-[15rem] flex-wrap pl-4 border-b-[2px]">
