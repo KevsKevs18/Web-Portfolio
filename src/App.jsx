@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div className="flex flex-row w-full min-h-screen bg-bodycolor">
           <Sidebar isOpen={isOpen} closeNav={closeNav} />
-          <main className={`w-full flex-1 md:px-4 md:pt-4 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
+          <main className={`flex flex-col w-full min-h-screen overflow-hidden lg:flex-row flex-1 md:px-4 md:pt-4 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
             <Navheader openNav={openNav} />
             <Routes>
               

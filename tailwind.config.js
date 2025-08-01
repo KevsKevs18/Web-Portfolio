@@ -3,6 +3,21 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      animation:{
+        blink: 'blink 1s step-start infinite',
+         'scroll-slow': 'scroll 10s linear infinite',
+      },
+      keyframes:{
+        blink:{
+          '0%, 100%': {opacity: '1'},
+          '50%': {opacity: '0'},
+        },
+        scroll:{
+          '0%': { transform: 'translateX(0%)'},
+          '100%': { transform: 'translateX(-50%)'},
+        },
+      },
+        
       colors:{
         bgcolor: "#fafafa",
         sidebar: "#141428",
@@ -33,16 +48,6 @@ export default {
         Londrina: ['Londrina Solid', 'sans-serif'],
         Rubik: ['Rubik', 'sans-serif'],
       },
-      animation:{
-        blink: 'blink 1s step-start infinite',
-      },
-      keyframes:{
-        blink:{
-          '0%, 100%': {opacity: '1'},
-          '50%': {opacity: '0'},
-        },
-      },
-
     },
   },
   plugins: [
