@@ -7,7 +7,7 @@ import react from "../assets/react.svg";
 import mysql from "../assets/mysql.svg";
 import express from "../assets/expressdotcom.svg";
 import tailwind from "../assets/tailwindcss.svg";
-import Skills from "../Components/Home/Skills.jsx";
+import Expertise from "../Components/Home/Expertise.jsx";
 
 const Mainhome = () => {
   const [text] = useTypewriter({
@@ -80,13 +80,13 @@ const Mainhome = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full h-[20rem] lg:h-screen lg:w-[23rem] lg:ml-4">
-        <div className="Card Stats w-full h-[10rem] bg-bgcolor flex flex-col mt-2 lg:mt-0 rounded-xl overflow-hidden whitespace-nowrap">
+      <div className="flex flex-col w-full min-h-screen lg:h-screen lg:w-[23rem] lg:ml-4">
+        <div className="Card Stats w-full h-[10rem] bg-bgcolor flex flex-col mt-2 lg:mt-0 rounded-xl overflow-hidden relative">
           <h4 className="text-[1.3rem] mb-4 ml-4 font-Londrina font-black">
             <span className="ri-flashlight-line mr-3"></span>Skills
           </h4>
-
-          <div className="animate-scroll-slow  inlineblock my-3 px-5 w-full h-1/2">
+        
+          <div className="animate-scroll-slow  flex my-3 px-5 w-max h-1/2 whitespace-nowrap">
             {doubled.map((skill, index) => (
               <div key={index} className="inline-block mx-6 text-center">
                 <img
@@ -98,8 +98,21 @@ const Mainhome = () => {
               </div>
             ))}
           </div>
+          </div>
+
+
+          <div className="Card Stats  w-full min-h-[17rem] lg:h-[13rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
+          <h4 className="text-[1.3rem] ml-4 font-Londrina font-black">
+            <span className="ri-user-follow-line mr-3"></span>Expertise
+          </h4>
+
+          <Expertise/>
+          
         </div>
-      </div>
+
+
+        </div>
+     
     </>
   );
 };

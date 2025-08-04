@@ -31,7 +31,7 @@ export default {
         techno:"#ffdfba",
       },
       boxShadow:{
-          shadowLight: '6px 6px 12px #bababa, -6px -6px 12px #ffffff',
+          shadowLight: '6px 6px 12px #bababa, -10px -10px 12px #ffffff',
       },
       screens:{
           sm: '640px', //Small tablets
