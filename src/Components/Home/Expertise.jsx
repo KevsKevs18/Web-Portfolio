@@ -22,14 +22,14 @@ const Expertise = () => {
               Web Development
             </h6>
             <span
-              className={
-                IsOpen[0] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
-              }
+              className={`cursor-pointer
+                ${IsOpen[0] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
+              `}
               onClick={() => openExpert(0)}
             ></span>
           </div>
         </div>
-        <div className={`w-full ${IsOpen[0] ? "h-[7rem] md:h-[4rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
+        <div className={`w-full ${IsOpen[0] ? "h-[7rem] md:h-[5rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
           <p className="font-sans mt-1">
             I build web apps from scratch using React. clean, responsive, and
             built to perform. Whether it’s a landing page or a full-scale
@@ -47,14 +47,14 @@ const Expertise = () => {
               Graphic Design
             </h6>
             <span
-              className={
-                IsOpen[1] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
-              }
+              className={`cursor-pointer
+                ${IsOpen[1] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
+              `}
               onClick={() => openExpert(1)}
             ></span>
           </div>
         </div>
-        <div className={`w-full ${IsOpen[1] ? "h-[7rem] md:h-[4rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
+        <div className={`w-full ${IsOpen[1] ? "h-[7rem] md:h-[5rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
           <p className="font-sans mt-1">
             Designing eye-catching visuals is my thing. ebooks, posters,
             infographics, you name it. I blend tools like Photoshop and
@@ -72,14 +72,14 @@ const Expertise = () => {
               Digitan Marketing
             </h6>
             <span
-              className={
-                IsOpen[2] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
-              }
+              className={`cursor-pointer
+                ${IsOpen[2] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
+              `}
               onClick={() => openExpert(2)}
             ></span>
           </div>
         </div>
-        <div className={`w-full ${IsOpen[2] ? "h-[7rem] md:h-[4rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
+        <div className={`w-full ${IsOpen[2] ? "h-[7rem] md:h-[5rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
           <p className="font-sans mt-1">
             I’ve been in affiliate marketing for years. running strategic
             campaigns, creating ad content, and promoting products that convert.
@@ -97,15 +97,15 @@ const Expertise = () => {
               UI / UX Design
             </h6>
             <span
-              className={
-                IsOpen[3] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
-              }
+              className={`cursor-pointer
+                ${IsOpen[3] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
+              `}
               onClick={() => openExpert(3)}
             ></span>
           </div>
         </div>
         <div
-          className={`w-full ${IsOpen[3] ? "h-[6rem] md:h-[2.5rem]" : "h-[0rem] hidden"}`}
+          className={`w-full ${IsOpen[3] ? "h-[6rem] md:h-[3rem]" : "h-[0rem] hidden"}`}
         >
           <p className="font-sans mt-1">
             Design isn’t just about looks it’s about how it feels. I focus on

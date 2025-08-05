@@ -45,7 +45,7 @@ const Mainhome = () => {
     <>
       {/*Left Container*/}
       <div className="flex flex-col w-full min-h-screen">
-        <div className="Content w-full h-[18rem] bg-svg-comp-guy bg-no-repeat bg-contain bg-right-bottom bg-bgcolor rounded-b-xl md:rounded-xl relative  grid place-items-center p-2 pt-4 lg:h-[20rem] sm:h-[26rem] md:h-[22rem]">
+        <div className="Content w-full h-[18rem] bg-svg-comp-guy bg-no-repeat bg-contain bg-right-bottom bg-bgcolor md:rounded-xl relative  grid place-items-center p-2 pt-4 lg:h-[20rem] sm:h-[26rem] md:h-[22rem]">
           <div className="w-full h-full ">
             <div className="Container for Calendar ml-2">
               <p className="text-blackg text-[.7rem] sm:text-[.9rem] md:text-[1rem] lg:text-[1rem]">
@@ -61,7 +61,7 @@ const Mainhome = () => {
             </div>
           </div>
         </div>
-        <div className="Card Stats w-full h-[22rem] lg:h-[13rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
+        <div className="Card Stats w-full h-[22rem] lg:h-[13rem] bg-bgcolor flex flex-col mt-2 md:rounded-xl">
           <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
             <span className="ri-line-chart-fill mr-3"></span>Career Stats
           </h4>
@@ -73,7 +73,7 @@ const Mainhome = () => {
         <Features />
       </div>
       <div className="flex flex-col w-full min-h-[35rem] lg:min-h-screen lg:w-[23rem] lg:ml-4">
-        <div className="Card Stats w-full h-[10rem] bg-bgcolor flex flex-col mt-2 lg:mt-0 rounded-xl overflow-hidden relative">
+        <div className="Card Stats w-full h-[10rem] bg-bgcolor flex flex-col mt-2 lg:mt-0 md:rounded-xl overflow-hidden relative">
           <h4 className="text-[1.3rem] mb-4 ml-4 mt-2 font-Londrina font-black">
             <span className="ri-flashlight-line mr-3"></span>Skills
           </h4>
@@ -92,7 +92,7 @@ const Mainhome = () => {
           </div>
         </div>
 
-        <div className="Card Stats  w-full min-h-[17rem] lg:min-h-[13rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
+        <div className="Card Stats  w-full min-h-[17rem] lg:min-h-[13rem] bg-bgcolor flex flex-col mt-2 md:rounded-xl">
           <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
             <span className="ri-user-follow-line mr-3"></span>Expertise
           </h4>

@@ -3,7 +3,7 @@ import React from "react";
 const Features = () => {
   return (
     <>
-      <div className="Card Stats w-full h-[22rem] md:h-[18rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
+      <div className="Card Stats w-full h-[22rem] md:h-[18rem] bg-bgcolor flex flex-col mt-2 md:rounded-xl">
         <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
           <span className="ri-pushpin-2-line mr-3"></span>Featured
         </h4>
