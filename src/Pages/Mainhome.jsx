@@ -1,6 +1,7 @@
 import React from "react";
 import Maincard from "../Components/Home/Maincard.jsx";
 import Features from "../Components/Home/Features.jsx";
+import Footer from "../Components/Footer.jsx"
 import { useTypewriter } from "react-simple-typewriter";
 import Html from "../assets/html5.svg";
 import react from "../assets/react.svg";
@@ -61,7 +62,7 @@ const Mainhome = () => {
           </div>
         </div>
         <div className="Card Stats w-full h-[22rem] lg:h-[13rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
-          <h4 className="text-[1.3rem] ml-4 font-Londrina font-black">
+          <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
             <span className="ri-line-chart-fill mr-3"></span>Career Stats
           </h4>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 m-5 lg:grid-cols-4 lg:grid-rows-1">
@@ -69,23 +70,14 @@ const Mainhome = () => {
           </div>
         </div>
 
-        <div className="Card Stats w-full h-[22rem] md:h-[18rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
-          <h4 className="text-[1.3rem] ml-4 font-Londrina font-black">
-            <span className="ri-pushpin-2-line mr-3"></span>Featured
-          </h4>
-          <div className="overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory scroll-smooth my-3 px-5 w-full h-full">
-            <div className="flex w-full h-[73%] gap-4 md:w-[50%] items-center">
-              <Features />
-            </div>
-          </div>
-        </div>
+        <Features />
       </div>
-      <div className="flex flex-col w-full min-h-screen lg:h-screen lg:w-[23rem] lg:ml-4">
+      <div className="flex flex-col w-full min-h-[35rem] lg:min-h-screen lg:w-[23rem] lg:ml-4">
         <div className="Card Stats w-full h-[10rem] bg-bgcolor flex flex-col mt-2 lg:mt-0 rounded-xl overflow-hidden relative">
-          <h4 className="text-[1.3rem] mb-4 ml-4 font-Londrina font-black">
+          <h4 className="text-[1.3rem] mb-4 ml-4 mt-2 font-Londrina font-black">
             <span className="ri-flashlight-line mr-3"></span>Skills
           </h4>
-        
+
           <div className="animate-scroll-slow  flex my-3 px-5 w-max h-1/2 whitespace-nowrap">
             {doubled.map((skill, index) => (
               <div key={index} className="inline-block mx-6 text-center">
@@ -98,21 +90,18 @@ const Mainhome = () => {
               </div>
             ))}
           </div>
-          </div>
+        </div>
 
-
-          <div className="Card Stats  w-full min-h-[17rem] lg:h-[13rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
-          <h4 className="text-[1.3rem] ml-4 font-Londrina font-black">
+        <div className="Card Stats  w-full min-h-[17rem] lg:min-h-[13rem] bg-bgcolor flex flex-col mt-2 rounded-xl">
+          <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
             <span className="ri-user-follow-line mr-3"></span>Expertise
           </h4>
 
-          <Expertise/>
-          
+          <Expertise />
         </div>
-
-
-        </div>
-     
+            <Footer/>
+        
+      </div>
     </>
   );
 };
