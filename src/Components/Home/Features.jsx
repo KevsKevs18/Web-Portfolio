@@ -4,7 +4,7 @@ const Features = () => {
   return (
     <>
       <div className="Card Stats w-full h-[22rem] md:h-[18rem] bg-bgcolor flex flex-col mt-2 md:rounded-xl">
-        <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
+        <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-bold">
           <span className="ri-pushpin-2-line mr-3"></span>Featured
         </h4>
         <div className="overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory scroll-smooth my-3 px-5 w-full h-full">

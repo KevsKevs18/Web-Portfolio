@@ -1,5 +1,4 @@
 import React from 'react'
-import resume from '../assets/Resume.jpg'
 import Footer from '../Components/Footer';
 
 const Resume = () => {

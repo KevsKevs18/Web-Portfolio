@@ -30,7 +30,7 @@ const clickactive = () => {
         <div className='flex flex-col mt-7'>
             <ul className='flex flex-col'>
                 <li className={`hover:bg-customBlue hover:text-bgcolor transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer ${active ? 'none' : 'bg-customBlue'}`} onClick={()=>{ clickactive(); closeNav(); navigate("/")}}><span className='ri-home-3-line mr-4'></span>Home</li>
-                <li className='hover:bg-customBlue hover:text-bgcolor transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer'><span className='ri-user-line mr-4'></span>About</li>
+                <li className={`hover:bg-customBlue hover:text-bgcolor transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer ${active ? 'none' : 'bg-customBlue'}`} onClick={()=>{ clickactive(); closeNav(); navigate("/about")}}><span className='ri-user-line mr-4'></span>About</li>
                 <li className='hover:bg-customBlue hover:text-bgcolor transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer'><span className='ri-folder-2-line mr-4'></span>Projects</li>
             </ul>
 

@@ -42,16 +42,19 @@ export default {
       backgroundImage:{
           'svg-comp-guy': "url('assets/codingart.png')",
           'svg-bg': "url('assets/SVG2.JPG')",
+          'kevin-profile': "url('assets/Kevin.JPG')",
       },
       fontFamily:{
         Gothic: ['Special Gothic Expanded One', 'sans-serif'],
         Londrina: ['Londrina Solid', 'sans-serif'],
         Rubik: ['Rubik', 'sans-serif'],
+        Inter: ["Inter", 'sans-serif'],
       },
     },
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
+    require('@tailwindcss/line-clamp'),
   ],
 }
 
