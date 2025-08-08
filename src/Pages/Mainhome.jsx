@@ -1,7 +1,7 @@
 import React from "react";
 import Maincard from "../Components/Home/Maincard.jsx";
 import Features from "../Components/Home/Features.jsx";
-import Footer from "../Components/Footer.jsx"
+import Footer from "../Components/Footer.jsx";
 import { useTypewriter } from "react-simple-typewriter";
 import Html from "../assets/html5.svg";
 import react from "../assets/react.svg";
@@ -9,6 +9,7 @@ import mysql from "../assets/mysql.svg";
 import express from "../assets/expressdotcom.svg";
 import tailwind from "../assets/tailwindcss.svg";
 import Expertise from "../Components/Home/Expertise.jsx";
+import Wrapper from "../Components/Wrapper.jsx";
 
 const Mainhome = () => {
   const [text] = useTypewriter({
@@ -54,30 +55,38 @@ const Mainhome = () => {
               </p>
             </div>
             <div className="Typing Container absolute top-0 left-0 w-[50%] ml-3 mt-12 lg:mt-20">
-              <h6 className="text-blackg break-words hyphens-auto leading-none text-[1.2rem] sm:text-[2.5rem] md:text-[2.5rem] lg:text-[2.5rem] font-Londrina font-black">
+              <h6 className="text-blackg break-words hyphens-auto leading-none text-[1.2rem] sm:text-[2.5rem] md:text-[2.5rem] lg:text-[2.5rem] font-black">
                 {text}
                 <span className="color-bgcolor animate-blink">_</span>
               </h6>
             </div>
           </div>
         </div>
-        <div className="Card Stats w-full h-[22rem] lg:h-[13rem] bg-bgcolor flex flex-col mt-2 md:rounded-xl">
-          <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
-            <span className="ri-line-chart-fill mr-3"></span>Career Stats
-          </h4>
+        <Wrapper
+          title="Career Stats"
+          iconClass="ri-line-chart-fill"
+          className="h-[22rem] lg:h-[10rem]"
+        >
           <div className="grid grid-cols-2 grid-rows-2 gap-4 m-5 lg:grid-cols-4 lg:grid-rows-1">
             <Maincard />
           </div>
-        </div>
-
-        <Features />
+        </Wrapper>
+        <Wrapper
+          title="Featured"
+          iconClass="ri-pushpin-2-line"
+          className="h-[22rem] md:h-[18rem]"
+        >
+          <Features />
+        </Wrapper>
       </div>
-      <div className="flex flex-col w-full min-h-[35rem] lg:min-h-screen lg:w-[23rem] lg:ml-4">
-        <div className="Card Stats w-full h-[10rem] bg-bgcolor flex flex-col mt-2 lg:mt-0 md:rounded-xl overflow-hidden relative">
-          <h4 className="text-[1.3rem] mb-4 ml-4 mt-2 font-Londrina font-black">
-            <span className="ri-flashlight-line mr-3"></span>Skills
-          </h4>
 
+      <div className="flex flex-col w-full min-h-[35rem] lg:min-h-screen lg:w-[23rem] lg:ml-4">
+        <Wrapper
+          title="Skills"
+          iconClass="ri-flashlight-line"
+          className="h-[10rem] lg:mt-0 overflow-hidden relative"
+          h1Class="mb-4"
+        >
           <div className="animate-scroll-slow  flex my-3 px-5 w-max h-1/2 whitespace-nowrap">
             {doubled.map((skill, index) => (
               <div key={index} className="inline-block mx-6 text-center">
@@ -90,17 +99,16 @@ const Mainhome = () => {
               </div>
             ))}
           </div>
-        </div>
+        </Wrapper>
 
-        <div className="Card Stats  w-full min-h-[17rem] lg:min-h-[13rem] bg-bgcolor flex flex-col mt-2 md:rounded-xl">
-          <h4 className="text-[1.3rem] ml-4 mt-2 font-Londrina font-black">
-            <span className="ri-user-follow-line mr-3"></span>Expertise
-          </h4>
-
+        <Wrapper
+          title="Expertise"
+          iconClass="ri-user-follow-line"
+          className="min-h-[17rem]"
+        >
           <Expertise />
-        </div>
-            <Footer/>
-        
+        </Wrapper>
+        <Footer />
       </div>
     </>
   );

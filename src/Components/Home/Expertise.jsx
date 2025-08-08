@@ -18,7 +18,7 @@ const Expertise = () => {
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
             <h6 className="font-bold">
-              <span className="ri-computer-line p-2 mr-2 bg-sidebar text-bgcolor rounded-full"></span>
+              <span className="ri-computer-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Web Development
             </h6>
             <span
@@ -43,7 +43,7 @@ const Expertise = () => {
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
             <h6 className="font-bold">
-              <span className="ri-brush-line p-2 mr-2 bg-sidebar text-bgcolor rounded-full"></span>
+              <span className="ri-brush-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Graphic Design
             </h6>
             <span
@@ -68,7 +68,7 @@ const Expertise = () => {
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
             <h6 className="font-bold">
-              <span className="ri-search-eye-line p-2 mr-2 bg-sidebar text-bgcolor rounded-full"></span>
+              <span className="ri-search-eye-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Digitan Marketing
             </h6>
             <span
@@ -93,7 +93,7 @@ const Expertise = () => {
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
             <h6 className="font-bold">
-              <span className="ri-artboard-2-line p-2 mr-2 bg-sidebar text-bgcolor rounded-full"></span>
+              <span className="ri-artboard-2-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               UI / UX Design
             </h6>
             <span

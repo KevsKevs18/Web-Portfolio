@@ -10,13 +10,13 @@ const Maincard = () => {
               <span className="ri-time-line text-[2rem]"></span>
             </div>
             <h6>
-              <span className="text-[2.3rem] mr-2 font-Londrina font-black">
+              <span className="text-[2.3rem] mr-2 font-bold">
                 0
               </span>
               Years
             </h6>
           </div>
-          <h6 className="text-[1.2rem] self-start mt-auto">Experience</h6>
+          <h6 className="text-[1rem] self-start mt-auto">Experience</h6>
         </div>
       </div>
 
@@ -26,9 +26,9 @@ const Maincard = () => {
             <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
               <span className="ri-medal-line text-[2rem]"></span>
             </div>
-            <h6 className="text-[2.3rem] mr-2 font-Londrina font-black">0</h6>
+            <h6 className="text-[2.3rem] mr-2  font-bold">0</h6>
           </div>
-          <h6 className="text-[1.2rem] self-start mt-auto">Certificate</h6>
+          <h6 className="text-[1rem] self-start mt-auto">Certificate</h6>
         </div>
       </div>
 
@@ -38,9 +38,9 @@ const Maincard = () => {
             <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
               <span className="ri-projector-line text-[2rem]"></span>
             </div>
-            <h6 className="text-[2.3rem] mr-2 font-Londrina font-black">0</h6>
+            <h6 className="text-[2.3rem] mr-2 font-bold">0</h6>
           </div>
-          <h6 className="text-[1.2rem] self-start mt-auto">Projects</h6>
+          <h6 className="text-[1rem] self-start mt-auto">Projects</h6>
         </div>
       </div>
 
@@ -50,9 +50,9 @@ const Maincard = () => {
             <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
               <span className="ri-code-box-line text-[2rem]"></span>
             </div>
-            <h6 className="text-[2.3rem] mr-2 font-Londrina font-black">0</h6>
+            <h6 className="text-[2.3rem] mr-2  font-bold">0</h6>
           </div>
-          <h6 className="text-[1.2rem] self-start mt-auto">Technologies</h6>
+          <h6 className="text-[1rem] self-start mt-auto">Technologies</h6>
         </div>
       </div>
     </>

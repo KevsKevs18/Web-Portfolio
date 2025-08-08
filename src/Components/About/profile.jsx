@@ -15,7 +15,7 @@ const profile = () => {
             <div className='w-[10rem] ml-16 md:ml-0 md:w-[20rem] h-[90%] pt-6'>
                 <p className='font-bold text-[1.2rem]'>Kevin A. Olano</p>
                 <p className='text-gray-500'>Front-End Developer</p>
-                <button className='border-2 border-bodycolor rounded-lg px-4 mt-2 cursor-pointer font-sans'><span className='ri-message-3-line mr-2'></span>Message</button>
+                <button className='border-2 border-bodycolor rounded-lg px-4 mt-2 cursor-pointer'><span className='ri-message-3-line mr-2'></span>Message</button>
             </div>
         </div>
 
