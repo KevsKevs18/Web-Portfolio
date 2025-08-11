@@ -105,7 +105,7 @@ const Expertise = () => {
           </div>
         </div>
         <div
-          className={`w-full ${IsOpen[3] ? "h-[6rem] md:h-[3rem]" : "h-[0rem] hidden"}`}
+          className={`w-full ${IsOpen[3] ? "h-[6rem] md:h-[3rem] lg:h-[5rem]" : "h-[0rem] hidden"}`}
         >
           <p className="font-sans mt-1">
             Design isn’t just about looks it’s about how it feels. I focus on
