@@ -5,7 +5,7 @@ import Aboutme from "../Components/About/aboutme.jsx";
 import Features from "../Components/Home/Features.jsx";
 import Certificates from "../Components/About/Certificates.jsx";
 import profile from "../assets/Kevin.JPG";
-import tcu from "../assets/TCU.PNG";
+import tcu from "../assets/TCU.png";
 import moreh from "../assets/Moreh.PNG";
 import VSSI from "../assets/VSSI.JPG";
 import UNO from "../assets/UNO.JPG";
