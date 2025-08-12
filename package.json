@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
+    "github-calendar": "^2.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-github-calendar": "^4.5.9",
     "react-router-dom": "^7.7.1",
     "react-simple-typewriter": "^5.0.1",
     "simple-typewriter": "^0.0.1",

@@ -68,7 +68,7 @@ const Sidebar = ({ isOpen, closeNav }) => {
             onClick={() => {
               closeNav();
             }}
-            to="/project"
+            to="/projects"
           >
             <span className="ri-folder-2-line mr-4"></span>Projects
           </NavLink>
