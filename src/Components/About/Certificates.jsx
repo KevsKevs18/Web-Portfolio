@@ -10,7 +10,7 @@ const Certificates = ({ certPic }) => {
           className="h-[3rem] w-[3rem] rounded-lg"
         />
         <div>
-          <h6 className="font-bold">React Basics</h6>
+          <h6 className="font-bold text-[18px]">React Basics</h6>
           <p className="font-normal">Hacker Rank</p>
           <h6 className="text-gray-500 mt-1">
             <span className="ri-calendar-2-line mr-2"></span> Issued Aug 2025
@@ -32,7 +32,7 @@ const Certificates = ({ certPic }) => {
           className="h-[3rem] w-[3rem] rounded-lg"
         />
         <div>
-          <h6 className="font-bold">React Basics</h6>
+          <h6 className="font-bold text-[18px]">React Basics</h6>
           <p className="font-normal">Hacker Rank</p>
           <h6 className="text-gray-500 mt-1">
             <span className="ri-calendar-2-line mr-2"></span> Issued Aug 2025
@@ -54,7 +54,7 @@ const Certificates = ({ certPic }) => {
           className="h-[3rem] w-[3rem] rounded-lg"
         />
         <div>
-          <h6 className="font-bold">React Basics</h6>
+          <h6 className="font-bold text-[18px]">React Basics</h6>
           <p className="font-normal">Hacker Rank</p>
           <h6 className="text-gray-500 mt-1">
             <span className="ri-calendar-2-line mr-2"></span> Issued Aug 2025
@@ -76,7 +76,7 @@ const Certificates = ({ certPic }) => {
           className="h-[3rem] w-[3rem] rounded-lg"
         />
         <div>
-          <h6 className="font-bold">React Basics</h6>
+          <h6 className="font-bold text-[18px]">React Basics</h6>
           <p className="font-normal">Hacker Rank</p>
           <h6 className="text-gray-500 mt-1">
             <span className="ri-calendar-2-line mr-2"></span> Issued Aug 2025

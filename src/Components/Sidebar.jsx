@@ -6,10 +6,10 @@ const Sidebar = ({ isOpen, closeNav }) => {
   const navigate = useNavigate();
 
   const activeClass =
-    "hover:text-bodycolor text-customBlue transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer";
+    "hover:text-sidebar text-customBlue transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer font-medium";
 
   const normalClass =
-    "hover:text-customBlue transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer";
+    "hover:text-customBlue transition-colors duration-200 py-2 pl-4 text-blackg cursor-pointer font-medium";
 
   return (
     <div
@@ -37,6 +37,7 @@ const Sidebar = ({ isOpen, closeNav }) => {
           onClick={() => {
             closeNav();
             navigate("/resume");
+            
           }}
         >
           <span className={`ri-file-download-line pr-2`}></span>Resume
@@ -49,6 +50,7 @@ const Sidebar = ({ isOpen, closeNav }) => {
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
             onClick={() => {
               closeNav();
+             
             }}
             to="/"
           >
@@ -58,6 +60,7 @@ const Sidebar = ({ isOpen, closeNav }) => {
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
             onClick={() => {
               closeNav();
+             
             }}
             to="/about"
           >
@@ -67,6 +70,7 @@ const Sidebar = ({ isOpen, closeNav }) => {
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
             onClick={() => {
               closeNav();
+             
             }}
             to="/projects"
           >

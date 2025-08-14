@@ -17,10 +17,10 @@ const Expertise = () => {
             max-h-[3rem]"
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
-            <h6 className="font-bold">
+            <h3 className="font-bold text-[18px]">
               <span className="ri-computer-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Web Development
-            </h6>
+            </h3>
             <span
               className={`cursor-pointer
                 ${IsOpen[0] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
@@ -29,7 +29,7 @@ const Expertise = () => {
             ></span>
           </div>
         </div>
-        <div className={`w-full ${IsOpen[0] ? "h-[7rem] md:h-[5rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
+        <div className={`w-full transition-[0.5s] overflow-hidden px-2 ${IsOpen[0] ? "h-[10rem] md:h-[7rem] lg:h-[8rem]" : "h-[0rem]"}`}>
           <p className="font-sans mt-1">
             I build web apps from scratch using React. clean, responsive, and
             built to perform. Whether it’s a landing page or a full-scale
@@ -42,10 +42,10 @@ const Expertise = () => {
             max-h-[3rem]"
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
-            <h6 className="font-bold">
+            <h3 className="font-bold text-[18px]">
               <span className="ri-brush-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Graphic Design
-            </h6>
+            </h3>
             <span
               className={`cursor-pointer
                 ${IsOpen[1] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
@@ -54,7 +54,7 @@ const Expertise = () => {
             ></span>
           </div>
         </div>
-        <div className={`w-full ${IsOpen[1] ? "h-[7rem] md:h-[5rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
+        <div className={`w-full transition-[0.5s] overflow-hidden px-2 ${IsOpen[1] ? "h-[9rem] md:h-[7rem] lg:h-[8rem]" : "h-[0rem]"}`}>
           <p className="font-sans mt-1">
             Designing eye-catching visuals is my thing. ebooks, posters,
             infographics, you name it. I blend tools like Photoshop and
@@ -67,10 +67,10 @@ const Expertise = () => {
             max-h-[3rem]"
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
-            <h6 className="font-bold">
+            <h3 className="font-bold text-[18px]">
               <span className="ri-search-eye-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Digitan Marketing
-            </h6>
+            </h3>
             <span
               className={`cursor-pointer
                 ${IsOpen[2] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
@@ -79,7 +79,7 @@ const Expertise = () => {
             ></span>
           </div>
         </div>
-        <div className={`w-full ${IsOpen[2] ? "h-[7rem] md:h-[5rem] lg:h-[8rem]" : "h-[0rem] hidden"}`}>
+        <div className={`w-full transition-[0.5s] overflow-hidden px-2 ${IsOpen[2] ? "h-[10rem] md:h-[7rem] lg:h-[8rem]" : "h-[0rem]"}`}>
           <p className="font-sans mt-1">
             I’ve been in affiliate marketing for years. running strategic
             campaigns, creating ad content, and promoting products that convert.
@@ -92,10 +92,10 @@ const Expertise = () => {
             max-h-[3rem]"
         >
           <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
-            <h6 className="font-bold">
+            <h3 className="font-bold text-[18px]">
               <span className="ri-artboard-2-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               UI / UX Design
-            </h6>
+            </h3>
             <span
               className={`cursor-pointer
                 ${IsOpen[3] ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}
@@ -105,7 +105,7 @@ const Expertise = () => {
           </div>
         </div>
         <div
-          className={`w-full ${IsOpen[3] ? "h-[6rem] md:h-[3rem] lg:h-[5rem]" : "h-[0rem] hidden"}`}
+          className={`w-full transition-[0.5s] overflow-hidden px-2 ${IsOpen[3] ? "h-[6rem] md:h-[3rem] lg:h-[5rem]" : "h-[0rem]"}`}
         >
           <p className="font-sans mt-1">
             Design isn’t just about looks it’s about how it feels. I focus on
