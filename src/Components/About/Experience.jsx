@@ -17,7 +17,9 @@ const Experience = ({ work1Pic, work2Pic }) => {
         />
         <div>
           <div
-            className={`transition-[0.5s] ${isExpanded[0] ? "" : "line-clamp-5"}`}
+            className={`transition-[0.5s] ${
+              isExpanded[0] ? "" : "line-clamp-5"
+            }`}
           >
             <h6 className="font-bold">
               Client Service Executive / Implant Technical Support
@@ -36,13 +38,29 @@ const Experience = ({ work1Pic, work2Pic }) => {
               onboarding forms through the <strong>TYDY platform</strong>,
               ensuring a smooth and efficient user experience.
             </p>
-            <p className="font-Inter text-[.9rem] font-normal mt-2"><strong>Key Contributions & Achievements:</strong></p>
-            <ul className="font-Inter text-[.9rem] font-normal list-disc mt-2 gap-2">
-              <li>- Assisted candidates in troubleshooting technical issues, clarifying form requirements, and guiding them step-by-step until successful submission.</li>
-              <li>- Coordinated with internal teams to escalate and resolve platform-related concerns, minimizing delays in the screening process.</li>
-              <li>- Maintained a high response rate and accuracy, ensuring candidate satisfaction and compliance with company standards.</li>
-              <li>- Developed clear communication skills by interacting with diverse candidates from different backgrounds and time zones.</li>
-              <li>- Demonstrated adaptability in handling multiple support requests while meeting tight deadlines.</li>
+            <p className="font-Inter text-[.9rem] font-normal mt-2">
+              <strong>Key Contributions & Achievements:</strong>
+            </p>
+            <ul className="font-Inter text-[.9rem] font-normal mt-2">
+              <li className="mb-2">
+                Assisted candidates in troubleshooting technical issues.
+              </li>
+              <li className="mb-2">
+                Coordinated with internal teams to escalate and resolve
+                platform-related concerns.
+              </li>
+              <li className="mb-2">
+                Ensuring candidate satisfaction and compliance with company
+                standards.
+              </li>
+              <li className="mb-2">
+                Developed clear communication skills by interacting with
+                diverse candidates from different backgrounds and time zones.
+              </li>
+              <li className="mb-2"> 
+                Demonstrated adaptability in handling multiple support
+                requests while meeting tight deadlines.
+              </li>
             </ul>
           </div>
           <button
@@ -62,7 +80,9 @@ const Experience = ({ work1Pic, work2Pic }) => {
         />
         <div>
           <div
-            className={`transition-[0.5s] ${isExpanded[1] ? "" : "line-clamp-5"}`}
+            className={`transition-[0.5s] ${
+              isExpanded[1] ? "" : "line-clamp-5"
+            }`}
           >
             <h6 className="font-bold">Sales Clerk / Stock Crew</h6>
             <p className="font-normal">Uno Factory Outlet</p>
@@ -71,11 +91,30 @@ const Experience = ({ work1Pic, work2Pic }) => {
               July 2017
             </small>
             <h6 className="font-Inter text-[.9rem] font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              nobis amet quis consequuntur ex eaque quam soluta, eveniet
-              dignissimos doloribus et, quisquam quasi debitis veritatis quae,
-              facere in architecto voluptates!
+              Sales Clerk –<strong>Uno Factory Outlet</strong>
             </h6>
+            <p className="font-Inter text-[.9rem] font-normal mt-2">
+              Delivered excellent customer service while leveraging
+              point-of-sale (POS) systems and inventory management tools to
+              ensure smooth retail operations.
+            </p>
+            <p className="font-Inter text-[.9rem] font-normal mt-2">
+              <strong>Key Contributions & Achievements:</strong>
+            </p>
+            <ul className="font-Inter text-[.9rem] font-normal mt-2 gap-2">
+              <li className="mb-2">
+                Assisted customers in finding products by utilizing digital
+                catalog systems.
+              </li>
+              <li className="mb-2">
+                Maintained accurate records of daily sales, showcasing strong
+                attention to detail and data accuracy.
+              </li>
+              <li className="mb-2">
+                Applied problem-solving skills to resolve customer concerns
+                quickly, improving satisfaction and retention.
+              </li>
+            </ul>
           </div>
           <button
             className="text-blue-500 cursor-pointer"

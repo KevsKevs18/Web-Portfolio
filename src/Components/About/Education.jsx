@@ -19,7 +19,7 @@ const Education = ({ tcuPic, morehPic }) => {
         />
         <div>
           <div
-            className={`transition-all ${isExpanded[0] ? "" : "line-clamp-5"}`}
+            className={`transition-[0.5s] ${isExpanded[0] ? "" : "line-clamp-5"}`}
           >
             <h6 className="font-bold text-[18px]">BS Computer Science</h6>
             <p className="font-normal">Taguig City University</p>
@@ -27,12 +27,13 @@ const Education = ({ tcuPic, morehPic }) => {
               <span className="ri-calendar-2-line mr-2"></span> July 2018 -
               August 2022
             </small>
-            <h6 className="font-Inter text-[1rem] mt-2 font-normal">
-              I am a graduate of Taguig City University with a Bachelor of
-              Science in Computer Science, equipped with a strong foundation in
-              programming, web development, and problem-solving. During my
-              academic journey, I consistently demonstrated initiative,
-              leadership, and creativity both inside and outside the classroom.
+            <h6 className="font-Inter text-[.9rem] mt-2 font-normal">
+              I am a graduate of Taguig City University with a <strong>Bachelor of
+              Science in Computer Science</strong>, equipped with a strong foundation in
+              programming, web development, and problem-solving.
+            </h6>
+            <h6 className="font-Inter text-[.9rem] mt-2 font-normal">
+             Relevant courses: Website Design, Computer Programing (Java, HTML, CSS, c#), Arduino, Network & Security. 
             </h6>
           </div>
           <button
@@ -52,7 +53,7 @@ const Education = ({ tcuPic, morehPic }) => {
         />
         <div>
           <div
-            className={`transition-all ${isExpanded[1] ? "" : "line-clamp-5"}`}
+            className={`transition-[0.5s] ${isExpanded[1] ? "" : "line-clamp-5"}`}
           >
             <h6 className="font-bold text-[18px]">
               Science Technology Engineering & Mathematics
@@ -62,13 +63,14 @@ const Education = ({ tcuPic, morehPic }) => {
               <span className="ri-calendar-2-line mr-2"></span> July 2016 - July
               2018
             </small>
-            <h6 className="font-Inter text-[1rem] mt-2 font-normal">
-              I graduated from Moreh Academy Inc. under the STEM strand
-              (Science, Technology, Engineering, and Mathematics), where I
+            <h6 className="font-Inter text-[.9rem] mt-2 font-normal">
+              I graduated from Moreh Academy Inc. under the STEM strand 
+              <strong> (Science, Technology, Engineering, and Mathematics)</strong>, where I
               developed a strong analytical mindset and a passion for
-              innovation. My SHS years were filled with hands-on projects,
-              science fairs, and technology-driven activities that sharpened my
-              problem-solving and research skills.
+              innovation. 
+            </h6>
+            <h6 className="font-Inter text-[.9rem] mt-2 font-normal">
+             Relevant courses: Genaral Mathematics, Calculus, Creating A Website, PC Assembly & Disaasembly.
             </h6>
           </div>
           <button

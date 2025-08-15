@@ -22,7 +22,7 @@ const CardProjects = () => {
     {cardlist.map((card) => (
     <div className='flex w-full h-full shadow-shadowLight rounded-lg p-2' key={card.path} onClick={clickToNavigate} data-path={card.path}>
         <div className='flex flex-col h-full w-full gap-2 hover:text-customBlue cursor-pointer'>
-            <h6 className='font-bold'><span className='ri-dropdown-list mr-3'></span>{card.name}<span className='text-experience font-bold ml-2 md:ml-4 px-1 rounded-lg text-[.6rem] md:text-[.8rem] border-[2px] border-experience'>Public</span></h6>
+            <h6 className='font-bold text-[1.1rem]'><span className='ri-dropdown-list mr-3'></span>{card.name}<span className='text-experience font-bold ml-2 md:ml-4 px-1 rounded-lg text-[.6rem] md:text-[.8rem] border-[2px] border-experience'>Public</span></h6>
             <small className='font-medium text-gray-500'>{card.created}</small>
         </div>
     </div>

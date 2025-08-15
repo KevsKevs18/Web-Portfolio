@@ -37,7 +37,6 @@ const Sidebar = ({ isOpen, closeNav }) => {
           onClick={() => {
             closeNav();
             navigate("/resume");
-            
           }}
         >
           <span className={`ri-file-download-line pr-2`}></span>Resume
@@ -48,33 +47,48 @@ const Sidebar = ({ isOpen, closeNav }) => {
         <ul className="flex flex-col">
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
-            onClick={() => {
+            onClick={({ isActive }) => {
+              if (isActive) return;
               closeNav();
-             
             }}
             to="/"
           >
-            <span className="ri-home-3-line mr-4"></span>Home
+            {({ isActive }) => (
+              <>
+                <span className="ri-home-3-line mr-4"></span>Home
+                {isActive && <span className="ri-star-fill ml-2"></span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
-            onClick={() => {
+            onClick={({ isActive }) => {
+              if (isActive) return;
               closeNav();
-             
             }}
             to="/about"
           >
-            <span className="ri-user-line mr-4"></span>About
+            {({ isActive }) => (
+              <>
+                <span className="ri-user-line mr-4"></span>About
+                {isActive && <span className="ri-star-fill ml-2"></span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
-            onClick={() => {
+            onClick={({ isActive }) => {
+              if (isActive) return;
               closeNav();
-             
             }}
             to="/projects"
           >
-            <span className="ri-folder-2-line mr-4"></span>Projects
+            {({ isActive }) => (
+              <>
+                <span className="ri-folder-2-line mr-4"></span>Projects
+                {isActive && <span className="ri-star-fill ml-2"></span>}
+              </>
+            )}
           </NavLink>
         </ul>
       </div>
