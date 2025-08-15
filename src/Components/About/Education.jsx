@@ -21,7 +21,7 @@ const Education = ({ tcuPic, morehPic }) => {
           <div
             className={`transition-[0.5s] ${isExpanded[0] ? "" : "line-clamp-5"}`}
           >
-            <h6 className="font-bold text-[18px]">BS Computer Science</h6>
+            <h6 className="font-bold">BS Computer Science</h6>
             <p className="font-normal">Taguig City University</p>
             <small className="text-gray-500 mt-1">
               <span className="ri-calendar-2-line mr-2"></span> July 2018 -
@@ -55,7 +55,7 @@ const Education = ({ tcuPic, morehPic }) => {
           <div
             className={`transition-[0.5s] ${isExpanded[1] ? "" : "line-clamp-5"}`}
           >
-            <h6 className="font-bold text-[18px]">
+            <h6 className="font-bold">
               Science Technology Engineering & Mathematics
             </h6>
             <p className="font-normal">Moreh Academy Inc.</p>
