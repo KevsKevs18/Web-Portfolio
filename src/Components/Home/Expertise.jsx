@@ -16,7 +16,7 @@ const Expertise = () => {
           className="w-full flex flex-col transition-all duration-300
             max-h-[3rem]"
         >
-          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
+          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2 cursor-pointer" onClick={() => openExpert(0)}>
             <h3 className="font-bold text-[18px]">
               <span className="ri-computer-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Web Development
@@ -41,7 +41,7 @@ const Expertise = () => {
           className="w-full flex flex-col transition-all duration-300
             max-h-[3rem]"
         >
-          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
+          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2 cursor-pointer" onClick={() => openExpert(1)}>
             <h3 className="font-bold text-[18px]">
               <span className="ri-brush-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Graphic Design
@@ -66,7 +66,7 @@ const Expertise = () => {
           className="w-full flex flex-col transition-all duration-300
             max-h-[3rem]"
         >
-          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
+          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2 cursor-pointer" onClick={() => openExpert(2)}>
             <h3 className="font-bold text-[18px]">
               <span className="ri-search-eye-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               Digitan Marketing
@@ -91,7 +91,7 @@ const Expertise = () => {
           className="w-full flex flex-col transition-all duration-300
             max-h-[3rem]"
         >
-          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2">
+          <div className="h-[3rem] w-full border-b-[2px] flex justify-between items-center pb-2 cursor-pointer" onClick={() => openExpert(3)}>
             <h3 className="font-bold text-[18px]">
               <span className="ri-artboard-2-line p-2 mr-4 bg-sidebar text-bgcolor rounded-full"></span>
               UI / UX Design
