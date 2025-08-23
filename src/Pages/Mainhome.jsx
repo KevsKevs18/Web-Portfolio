@@ -45,7 +45,7 @@ const Mainhome = () => {
   return (
     <>
       {/*Left Container*/}
-      <div className="flex flex-col w-full min-h-screen">
+      <div className="flex flex-col w-full min-h-screen md:min-h-[300px]">
         <div className="Content w-full h-[18rem] bg-svg-comp-guy bg-no-repeat bg-contain bg-right-bottom bg-bgcolor md:rounded-xl relative  grid place-items-center p-2 pt-4 lg:h-[20rem] sm:h-[26rem] md:h-[22rem]">
           <div className="w-full h-full ">
             <div className="Container for Calendar ml-2">
