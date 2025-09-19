@@ -1,43 +1,26 @@
 import React from "react";
 
 const Features = () => {
+
+
+  const featureProject = [
+    {title: "My Portfolio"},
+    {title: "Travel Blog Website"},
+  ];
+
   return (
     <>
-    
-        <div className="overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory scroll-smooth my-3 px-5 w-full h-full">
-          <div className="flex w-full h-[73%] gap-4 md:w-[50%] items-center">
-            <div className="snap-center shrink-0 w-full h-full rounded-xl">
-              <div className="Card bg-sidebar w-full h-full rounded-xl" />
-              <div className="Card-Info flex flex-col p-3">
-                <h5 className="font-bold mb-2">My First Ever Project</h5>
-                <p className="text-[.9rem] text-gray-400">
-                  <span className="ri-time-line mr-2"></span>July 30, 2025
-                </p>
-              </div>
-            </div>
-
-            <div className="snap-center shrink-0 w-full h-full rounded-xl">
-              <div className="Card bg-sidebar w-full h-full rounded-xl" />
-              <div className="Card-Info flex flex-col p-3">
-                <h5 className="font-bold mb-2">My First Ever Project</h5>
-                <p className="text-[.9rem] text-gray-400">
-                  <span className="ri-time-line mr-2"></span>July 30, 2025
-                </p>
-              </div>
-            </div>
-
-            <div className="snap-center shrink-0 w-full h-full rounded-xl">
-              <div className="Card bg-sidebar w-full h-full rounded-xl" />
-              <div className="Card-Info flex flex-col p-3">
-                <h5 className="font-bold mb-2">My First Ever Project</h5>
-                <p className="text-[.9rem] text-gray-400">
-                  <span className="ri-time-line mr-2"></span>July 30, 2025
-                </p>
-              </div>
-            </div>
+      <div className="flex flex-col w-full h-full sm:flex-row md:flex-col">
+      {featureProject.map ((blog, index) => (
+        <div key={index} className="h-full flex flex-col p-2 rounded-xl justify-center items-center w-full">
+         
+          <div className="w-full h-full bg-lightblue rounded-lg flex justify-center pt-2">
+           <h3 className="font-bold font-Inter text-black-g sm:text-[.8rem]">{blog.title}</h3>
           </div>
+          
         </div>
-  
+      ))}
+      </div>
     </>
   );
 };

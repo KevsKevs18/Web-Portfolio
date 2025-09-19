@@ -19,8 +19,10 @@ export default {
       },
         
       colors:{
+        wrapperColor: "#d0e1e9",
+        lightblue: "#dfecf2",
         bgcolor: "#fafafa",
-        sidebar: "#141428",
+        sidebar: "#1B1212",
         bodycolor: "#E6E6E6",
         customBlue: "#90E0EF",
         'black-g':"#000000",
@@ -34,7 +36,8 @@ export default {
           shadowLight: '6px 6px 12px #bababa, -10px -10px 12px #ffffff',
       },
       screens:{
-          sm: '640px', //Small tablets
+          sm: '500px', //Small tablets
+          mm: '640px', //Medium tablets
           md: '768px', //tablets
           lg: '1024px', //laptop
           xl: '1280px', //Desktops
@@ -49,12 +52,29 @@ export default {
         Londrina: ['Londrina Solid', 'sans-serif'],
         Rubik: ['Rubik', 'sans-serif'],
         Inter: ["Inter", 'sans-serif'],
+        GoogleSans: ['Google Sans Code', 'monospace'],
+      },
+      gridTemplateAreas: {
+          layoutMobile: [
+            'navheader',
+            'profile',
+            'maincard'
+          ],
+          layoutDesktop:[
+            'navheader profile',
+            'maincard profile',
+          ],
+          tablet:[
+            'navheader navheader',
+            'maincard profile',
+          ],
       },
     },
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
     require('@tailwindcss/line-clamp'),
+    require('@savvywombat/tailwindcss-grid-areas'),
   ],
 }
 

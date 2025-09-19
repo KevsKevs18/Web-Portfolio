@@ -1,60 +1,35 @@
 import React from "react";
 
 const Maincard = () => {
+  const titleCard = [
+    { title: "Experience", count: 0, icon: "ri-time-line" },
+    { title: "Certificate", count: 0, icon: "ri-medal-line" },
+    { title: "Projects", count: 0, icon: "ri-projector-line" },
+    { title: "Technologies", count: 0, icon: "ri-code-box-line" },
+  ];
+
   return (
     <>
-      <div className="bg-bgcolor h-[8rem] w-full rounded-xl flex flex-col py-4 px-2 items-center shadow-shadowLight">
-        <div className="flex flex-col w-[90%] h-full bg-transparent items-center">
-          <div className="flex flex-row h-full w-full">
-            <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
-              <span className="ri-time-line text-[2rem]"></span>
-            </div>
-            <h6>
-              <span className="text-[2.3rem] mr-2 font-bold">
-                0
-              </span>
-              Years
-            </h6>
-          </div>
-          <h6 className="text-[1rem] self-start mt-auto">Experience</h6>
-        </div>
-      </div>
+      {titleCard.map((card, index) => (
+        <div
+          key={index}
+          className="bg-lightblue h-full overflow-hidden w-full pb-2  rounded-xl flex flex-col px-2 justify-center items-center"
+        >
+          <div className="flex flex-col w-[90%] h-full bg-transparent items-center">
+            <div className="flex flex-row h-full w-full">
+              <span className={`${card.icon} text-[1.5rem] sm:text-[1rem] mr-5`}></span>
 
-      <div className="bg-bgcolor h-[8rem] w-full rounded-xl flex flex-col py-4 px-2 items-center shadow-shadowLight">
-        <div className="flex flex-col w-[90%] h-full bg-transparent items-center">
-          <div className="flex flex-row h-full w-full">
-            <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
-              <span className="ri-medal-line text-[2rem]"></span>
+              <h6
+                className="text-[2.3rem] mm:text-[1.5rem] mr-2 text-projects font-medium">
+                  {card.count}
+                
+              </h6>
             </div>
-            <h6 className="text-[2.3rem] mr-2  font-bold">0</h6>
+            <h6 className="text-[1rem] mm:text-[.8rem] sm:text-[.8rem] font-bold self-start mt-auto">{card.title}</h6>
           </div>
-          <h6 className="text-[1rem] self-start mt-auto">Certificate</h6>
         </div>
-      </div>
-
-      <div className="bg-bgcolor h-[8rem] w-full rounded-xl flex flex-col py-4 px-2 items-center shadow-shadowLight">
-        <div className="flex flex-col w-[90%] h-full bg-transparent items-center">
-          <div className="flex flex-row h-full w-full">
-            <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
-              <span className="ri-projector-line text-[2rem]"></span>
-            </div>
-            <h6 className="text-[2.3rem] mr-2 font-bold">0</h6>
-          </div>
-          <h6 className="text-[1rem] self-start mt-auto">Projects</h6>
-        </div>
-      </div>
-
-      <div className="bg-bgcolor h-[8rem] w-full rounded-xl flex flex-col py-4 px-2 items-center shadow-shadowLight">
-        <div className="flex flex-col w-[90%] h-full bg-transparent items-center">
-          <div className="flex flex-row h-full w-full">
-            <div className="grid place-items-center bg-customBlue w-[3.1rem] h-[3rem] rounded-xl mr-2 border-[2px] border-bgcolor">
-              <span className="ri-code-box-line text-[2rem]"></span>
-            </div>
-            <h6 className="text-[2.3rem] mr-2  font-bold">0</h6>
-          </div>
-          <h6 className="text-[1rem] self-start mt-auto">Technologies</h6>
-        </div>
-      </div>
+      ))}
+      
     </>
   );
 };

@@ -21,7 +21,7 @@
 }
 
 body{
-    background-color: var(--br-color);
+    background-color: lightblue;
     overflow-x: hidden;
     transition: margin-left .5s;
      margin: 0;

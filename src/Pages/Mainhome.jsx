@@ -3,20 +3,19 @@ import Maincard from "../Components/Home/Maincard.jsx";
 import Features from "../Components/Home/Features.jsx";
 import Footer from "../Components/Footer.jsx";
 import { useTypewriter } from "react-simple-typewriter";
-import Html from "../assets/html5.svg";
-import react from "../assets/react.svg";
-import mysql from "../assets/mysql.svg";
-import express from "../assets/expressdotcom.svg";
-import tailwind from "../assets/tailwindcss.svg";
 import Expertise from "../Components/Home/Expertise.jsx";
 import Wrapper from "../Components/Wrapper.jsx";
+import Profile from "../Components/Home/Profile.jsx";
+import Navheader from "../Components/Navheader.jsx";
+import Contribution from "../Components/Projects/Contribution.jsx";
+import Skills from "../Components/Home/Skills.jsx"
 
-const Mainhome = () => {
+const Mainhome = ({ openNav }) => {
   const [text] = useTypewriter({
     words: [
+      "Good day, Everyone",
       "Welcome to my Codebase",
-      "Passionate about clean code",
-      "Delivering scalable web solutions",
+      "Thanks for Visiting",
     ],
     typeSpeed: 100,
     deleteSpeed: 150,
@@ -33,82 +32,67 @@ const Mainhome = () => {
     day: "numeric",
   });
 
-  const skills = [
-    { name: "HTML", src: Html },
-    { name: "TAILWIND", src: tailwind },
-    { name: "REACT", src: react },
-    { name: "DATABASE", src: mysql },
-    { name: "EXPRESS JS", src: express },
-  ];
-  const doubled = [...skills, ...skills];
+  
 
   return (
     <>
-      {/*Left Container*/}
-      <div className="flex flex-col w-full min-h-screen md:min-h-[300px]">
-        <div className="Content w-full h-[18rem] bg-svg-comp-guy bg-no-repeat bg-contain bg-right-bottom bg-bgcolor md:rounded-xl relative  grid place-items-center p-2 pt-4 lg:h-[20rem] sm:h-[26rem] md:h-[22rem]">
-          <div className="w-full h-full ">
-            <div className="Container for Calendar ml-2">
-              <p className="text-blackg text-[.7rem] sm:text-[.9rem] md:text-[1rem] lg:text-[1rem]">
-                <span className="ri-calendar-line mr-2"></span>
-                {formattedDate}
-              </p>
+      {/* All Component */}
+      <div className="w-full h-auto mm:px-2 overflow-hidden">
+        {/* Top Content */}
+        <div className="grid grid-cols-1 grid-rows-[auto_auto_auto]  mm:gap-2 w-full md:grid-cols-[1fr_250px] h-auto md:grid-rows-[auto_1fr] overflow-hidden grid-areas-layoutMobile mm:grid-areas-layoutDesktop">
+          <Navheader
+            className="[grid-area:navheader]"
+            formattedDate={formattedDate}
+            openNav={openNav}
+            text={text}
+          />
+          <Profile profileClass="[grid-area:profile] sm:mt-0 mm:h-[16rem] mm:mt-4 mm:rounded-xl mm:p-0 lg:h-[13rem]" />
+          <Wrapper
+            h1Class="hidden"
+            iconClass="ri-line-chart-fill"
+            className="h-auto mt-0 py-2 mm:rounded-xl mm:py-2 mm:mt-0  [grid-area:maincard] px-2 justify-center items-center"
+          >
+            <div className="grid grid-cols-2 w-full place-items-center grid-rows-2 h-full gap-2 sm:grid-cols-4 sm:grid-rows-1  lg:grid-cols-4 lg:grid-rows-1 mm:grid-cols-2 mm:grid-rows-2">
+              <Maincard />
             </div>
-            <div className="Typing Container absolute top-0 left-0 w-[50%] ml-3 mt-12 lg:mt-20">
-              <h6 className="text-blackg break-words hyphens-auto leading-none text-[1.2rem] sm:text-[2.5rem] md:text-[2.5rem] lg:text-[2.5rem] font-black">
-                {text}
-                <span className="color-bgcolor animate-blink">_</span>
-              </h6>
-            </div>
-          </div>
+          </Wrapper>
         </div>
-        <Wrapper
-          title="Career Stats"
-          iconClass="ri-line-chart-fill"
-          className="h-[22rem] lg:h-[10rem]"
-        >
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 m-5 lg:grid-cols-4 lg:grid-rows-1">
-            <Maincard />
-          </div>
-        </Wrapper>
-        <Wrapper
-          title="Featured"
+
+         {/* Bottom part */}
+         <div className="w-full grid grid-cols-1 h-auto mm:gap-2 lg:grid-cols-[700px_minmax(0,1fr)]">
+
+        <div className="flex flex-col w-fuil h-auto md:py-2">
+
+          {/* Features, Contributions, Skills */}
+          
+          <div className="grid grid-cols-1 md:grid-cols-[210px_minmax(0,1fr)] mm:gap-2 overflow-hidden">
+         <Wrapper
+         title="My Featured Projects"
+         h1Class=""
           iconClass="ri-pushpin-2-line"
-          className="h-[22rem] md:h-[18rem]"
+          className="h-[30rem] items-center p-2 md:h-[18rem] gap-2 sm:h-[12rem] mm:rounded-xl md:flex-col"
         >
           <Features />
         </Wrapper>
-      </div>
 
-      <div className="flex flex-col w-full min-h-[35rem] lg:min-h-screen lg:w-[23rem] lg:ml-4">
-        <Wrapper
-          title="Skills"
-          iconClass="ri-flashlight-line"
-          className="h-[10rem] lg:mt-0 overflow-hidden relative"
-          h1Class="mb-4"
-        >
-          <div className="animate-scroll-slow  flex my-3 px-5 w-max h-1/2 whitespace-nowrap">
-            {doubled.map((skill, index) => (
-              <div key={index} className="inline-block mx-6 text-center">
-                <img
-                  src={skill.src}
-                  className="w-[3rem] h-[3rem]"
-                  alt={skill.name}
-                />
-                <span className="font-bold">{skill.name}</span>
-              </div>
-            ))}
-          </div>
-        </Wrapper>
+        <Contribution/>
+        </div>
+          <Skills/>
+        </div>
 
+        {/* Footer, Expertise */}
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-1 lg:mt-2 w-full h-auto mm:gap-2 ">
         <Wrapper
           title="Expertise"
           iconClass="ri-user-follow-line"
-          className="min-h-[17rem]"
+          className="min-h-[17rem] items-center mm:rounded-xl"
         >
           <Expertise />
         </Wrapper>
         <Footer />
+
+      </div>
+      </div>
       </div>
     </>
   );

@@ -4,7 +4,6 @@ import Resume from "./Pages/Resume.jsx";
 import Projects from "./Pages/Projects.jsx"
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
-import Navheader from "./Components/Navheader.jsx";
 import About from "./Pages/About.jsx"
 import RedirectOnRefresh from "./Components/RedirectOnRefresh.jsx";
 
@@ -20,13 +19,13 @@ function App() {
     <>
       <Router>
         <RedirectOnRefresh/>
-        <div className="flex flex-row w-full min-h-screen bg-bodycolor">
-          <Sidebar isOpen={isOpen} closeNav={closeNav} />
-          <main className={`flex flex-col w-full min-h-screen overflow-hidden lg:flex-row flex-1 md:px-4 md:pt-4 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
-            <Navheader openNav={openNav} />
+        <div className="flex flex-row w-full min-h-screen bg-lightblue lg:px-24 lg:py-2">
+          <Sidebar isOpen={isOpen} closeNav={closeNav} openNav={openNav}/>
+          <main className={`flex flex-col w-full min-h-screen overflow-hidden flex-1 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
+            
             
             <Routes>
-              <Route path="/" element={<Mainhome/>}/>
+              <Route path="/" element={<Mainhome openNav={openNav}/>}/>
               <Route path="/resume" element={<Resume/>} />
               <Route path="/about" element={<About/>} />
               <Route path="/projects" element={<Projects/>} />
