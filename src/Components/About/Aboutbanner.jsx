@@ -6,7 +6,7 @@ import working from '../../assets/working.png'
 
 const Aboutbanner = () => {
   return (
-    <Wrapper className='h-[13rem] px-2 pb-2 mm:mt-4' h1Class="hidden">
+    <Wrapper className='h-[13rem] pb- px-2 mm:px-0 mm:mt-4' h1Class="hidden">
 
         <div className='bg-center bg-no-repeat bg-cover relative h-full w-full rounded-xl' style={{backgroundImage: `url(${aboutBG})`}}>
 

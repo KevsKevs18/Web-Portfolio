@@ -17,38 +17,39 @@ import { NavLink } from "react-router-dom";
 
 const About = () => {
  
-  const buttons = [
-    {label: "About Me", id: "A", icon:"ri-user-3-line", component: <Aboutme/>}, 
+  const buttons = [ 
     {label: "My Education", id: "B", icon:"ri-book-open-line", component: <Education/>}, 
     {label: "Work Experience", id: "C", icon:"ri-computer-line", component: <Experience/>}
   ]
 
-  const [active, setIsActive] = useState ("A")
+  const [active, setIsActive] = useState ("B")
 
   
 
   return (
     <>
-      <div className="flex flex-col bg-white items-center w-full min-h-screen">
+      <div className="flex flex-col items-center w-full min-h-screen mm:px-2">
         <Aboutbanner />
-        <div className="grid grid-cols-1 w-full h-auto px-4 ">
-          <h3 className="w-full flex text-[.9rem] text-gray-g font-bold justify-center text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-            consequatur quos hic, exercitationem cumque, dolore quia totam{" "}
-          </h3>
-          <ul className="flex flex-col justify-between items-center w-300  gap-2 mt-2 mm:flex-row  mm:px-4">
+        <div className="grid grid-cols-1 w-full mm:mt-2 h-auto bg-white mm:rounded-xl">
+          <Aboutme/>
+          <ul className="flex w-full  mt-4 mm:px-4 lg:hidden">
             {buttons.map ((btn, id)=> (
-            <button key={btn.id} onClick={()=> { setIsActive(btn.id)}} className={` py-1 border-[2px] border-black-g w-1/2 rounded-xl flex justify-center font-bold text-[.9rem] mm:text-[.8rem] ${active === btn.id ? "bg-greenFont text-white border-white" : "none"}`}><span className={`mr-3 ${btn.icon}`}></span>{btn.label}</button>
+            <li key={btn.id} onClick={()=> { setIsActive(btn.id)}} className={`mr-2 w-full flex sm:mb-4 font-medium justify-center text-[1rem] ${active === btn.id ? "underline underline-offset-8" : "none"}`}><span className={`mr-2 ${btn.icon}`}></span>{btn.label}</li>
             ))}
           </ul>
         </div>
 
-            <div className="bg-white  w-full mt-4 rounded-lg min-h-[10rem]">
-
-              <div>
-                {active === "A" && <Aboutme/>}
-                {active === "B" && <Education tcuPic={tcu} morehPic={moreh}/>}
-                {active === "C" && <Experience work1Pic={VSSI} work2Pic={UNO}/>}
+            <div className="flex lg:gap-2 justify-center w-full mt-2 rounded-lg min-h-[10rem]">
+              <div className="bg-white rounded-xl">
+             <Education className="hidden lg:flex" tcuPic={tcu} morehPic={moreh}/>
+             </div>
+             <div className="bg-white rounded-xl">
+             <Experience className="hidden lg:flex" work1Pic={VSSI} work2Pic={UNO}/>
+             </div>
+              <div className="bg-white w-full h-full rounded-xl lg:hidden">
+                {active === "B" && <Education className="lg:hidden" tcuPic={tcu} morehPic={moreh}/>}
+                {active === "C" && <Experience className="lg:hidden" work1Pic={VSSI} work2Pic={UNO}/>}
+                
               </div>
 
             </div>

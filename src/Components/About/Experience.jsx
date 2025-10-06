@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Experience = ({ work1Pic, work2Pic }) => {
+const Experience = ({ work1Pic, work2Pic, className="" }) => {
   const [isExpanded, setExpanded] = useState([false, false]);
 
   const openExperience = (index) => {
@@ -8,7 +8,7 @@ const Experience = ({ work1Pic, work2Pic }) => {
   };
 
   return (
-    <div className="flex flex-col gap-2 my-3 w-full min-h-[18rem] md:min-h-[16rem] lg:min-h-[18rem] items-center px-4">
+    <div className={`flex flex-col  gap-2 my-3 w-full min-h-[18rem] md:min-h-[16rem] lg:min-h-[18rem] items-center px-4 ${className}`}>
       <div className="flex gap-2 min-h-[9rem] w-full">
         <img
           src={work1Pic}
