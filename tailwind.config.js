@@ -21,9 +21,13 @@ export default {
       colors:{
         wrapperColor: "#d0e1e9",
         lightblue: "#dfecf2",
-        bgcolor: "#fafafa",
-        sidebar: "#1B1212",
+        bgcolor: "#23437e",
+        sidebar: "#abf7b1",
         bodycolor: "#E6E6E6",
+        wrapper: "#375589",
+        card: "#4c6796",
+        greenFont: "#041908",
+        yellowFont: "#cbc66a",
         customBlue: "#90E0EF",
         'black-g':"#000000",
         'gray-g':"#4D4855",
@@ -33,7 +37,8 @@ export default {
         techno:"#ffdfba",
       },
       boxShadow:{
-          shadowLight: '6px 6px 12px #bababa, -10px -10px 12px #ffffff',
+          shadowLight: '6px 6px 12px #bababa',
+          shadowList: '6px 6px 10px #000000',
       },
       screens:{
           sm: '500px', //Small tablets
@@ -68,6 +73,7 @@ export default {
             'navheader navheader',
             'maincard profile',
           ],
+         
       },
     },
   },

@@ -5,8 +5,8 @@ const aboutme = () => {
 
   return (
     <div className="m-4">
-      <div className={`transition-all ${isExpanded ? "" : "line-clamp-3"}`}>
-        <p className="font-Inter text-[1rem] md:text-[.9rem] font-normal">
+      <div className={`transition-all ${isExpanded ? "" : "line-clamp-6"}`}>
+        <p className="font-Inter text-[.9rem] md:text-[.9rem] font-normal">
           I'm a Front-End Developer with a designer's eye, turning complex
           requirements into sleek, intuitive Uls using React, Ant Design, MUI,
           Styled Components, and GraphQL. With a background in graphic design

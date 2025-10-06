@@ -1,11 +1,15 @@
 import React from "react";
+import comps from "../../assets/comps.png"
+import folder from "../../assets/folder.png"
+import trophy from "../../assets/trophy.png"
+import wifi from "../../assets/wifi.png"
 
 const Maincard = () => {
   const titleCard = [
-    { title: "Experience", count: 0, icon: "ri-time-line" },
-    { title: "Certificate", count: 0, icon: "ri-medal-line" },
-    { title: "Projects", count: 0, icon: "ri-projector-line" },
-    { title: "Technologies", count: 0, icon: "ri-code-box-line" },
+    { title: "Experience", count: 3, icon: comps },
+    { title: "Certificate", count: 6, icon: trophy },
+    { title: "Projects", count: 3, icon: folder },
+    { title: "Technologies", count: 10, icon: wifi },
   ];
 
   return (
@@ -13,19 +17,19 @@ const Maincard = () => {
       {titleCard.map((card, index) => (
         <div
           key={index}
-          className="bg-lightblue h-full overflow-hidden w-full pb-2  rounded-xl flex flex-col px-2 justify-center items-center"
+          className="bg-white shadow-shadowLight mb-2 h-full overflow-hidden w-full pb-2   rounded-xl flex flex-col px-2 justify-center items-center"
         >
-          <div className="flex flex-col w-[90%] h-full bg-transparent items-center">
-            <div className="flex flex-row h-full w-full">
-              <span className={`${card.icon} text-[1.5rem] sm:text-[1rem] mr-5`}></span>
+          <div className="flex flex-col w-[90%] h-auto  bg-transparent items-center">
+            <div className="flex flex-row h-full w-full mb-2 justify-center">
 
               <h6
-                className="text-[2.3rem] mm:text-[1.5rem] mr-2 text-projects font-medium">
+                className="text-[2.3rem] text-greenFont mm:text-[1.5rem] mr-2 font-bold">
                   {card.count}
                 
               </h6>
+              <img src={card.icon} alt="" className="w-[4rem] h-[4rem]"/>
             </div>
-            <h6 className="text-[1rem] mm:text-[.8rem] sm:text-[.8rem] font-bold self-start mt-auto">{card.title}</h6>
+            <p className="text-[1rem] text-greenFont font-bold">{card.title}</p>
           </div>
         </div>
       ))}

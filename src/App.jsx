@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import About from "./Pages/About.jsx"
 import RedirectOnRefresh from "./Components/RedirectOnRefresh.jsx";
+import Navheader from "./Components/Navheader.jsx";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,10 @@ function App() {
     <>
       <Router>
         <RedirectOnRefresh/>
-        <div className="flex flex-row w-full min-h-screen bg-lightblue lg:px-24 lg:py-2">
+        <div className="flex flex-row w-full min-h-screen bg-bodycolor lg:rounded-xl">
           <Sidebar isOpen={isOpen} closeNav={closeNav} openNav={openNav}/>
-          <main className={`flex flex-col w-full min-h-screen overflow-hidden flex-1 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
-            
+          <main className={`flex flex-col items-center w-full min-h-screen overflow-hidden flex-1 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
+            <Navheader openNav={openNav}  className="mm:hidden"/>
             
             <Routes>
               <Route path="/" element={<Mainhome openNav={openNav}/>}/>
