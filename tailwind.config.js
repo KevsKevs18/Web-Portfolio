@@ -39,6 +39,7 @@ export default {
       boxShadow:{
           shadowLight: '6px 6px 12px #bababa',
           shadowList: '6px 6px 10px #000000',
+          shadowGreen: '6px 6px 10px #041908',
       },
       screens:{
           sm: '500px', //Small tablets

@@ -19,7 +19,7 @@ const Education = ({ tcuPic, morehPic, className="" }) => {
         />
         <div>
           <div
-            className={`transition-[0.5s] ${isExpanded[0] ? "" : "line-clamp-5"}`}
+            className={`transition-[0.5s] ${isExpanded[0] ? "" : "line-clamp-6"}`}
           >
             <h6 className="font-bold">BS Computer Science</h6>
             <p className="font-normal">Taguig City University</p>
@@ -53,7 +53,7 @@ const Education = ({ tcuPic, morehPic, className="" }) => {
         />
         <div>
           <div
-            className={`transition-[0.5s] ${isExpanded[1] ? "" : "line-clamp-5"}`}
+            className={`transition-[0.5s] ${isExpanded[1] ? "" : "line-clamp-6"}`}
           >
             <h6 className="font-bold">
               Science Technology Engineering & Mathematics

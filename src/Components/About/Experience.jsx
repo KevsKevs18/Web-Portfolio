@@ -18,7 +18,7 @@ const Experience = ({ work1Pic, work2Pic, className="" }) => {
         <div>
           <div
             className={`transition-[0.5s] ${
-              isExpanded[0] ? "" : "line-clamp-5"
+              isExpanded[0] ? "" : "line-clamp-6"
             }`}
           >
             <h6 className="font-bold">
@@ -81,7 +81,7 @@ const Experience = ({ work1Pic, work2Pic, className="" }) => {
         <div>
           <div
             className={`transition-[0.5s] ${
-              isExpanded[1] ? "" : "line-clamp-5"
+              isExpanded[1] ? "" : "line-clamp-6"
             }`}
           >
             <h6 className="font-bold">Sales Clerk / Stock Crew</h6>
