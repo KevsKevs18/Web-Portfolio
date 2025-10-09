@@ -21,27 +21,27 @@ const Experience = ({ work1Pic, work2Pic, className="" }) => {
               isExpanded[0] ? "" : "line-clamp-6"
             }`}
           >
-            <h6 className="font-bold">
+            <h3 className="font-bold">
               Client Service Executive / Implant Technical Support
-            </h6>
+            </h3>
             <p className="font-normal">Vanguard Screening Solution Inc.</p>
             <small className="text-gray-500 mt-1">
               <span className="ri-calendar-2-line mr-2"></span> October 2022 -
               Present
             </small>
-            <h6 className="font-Inter text-[.9rem] font-normal">
+            <p className="font-Inter text-[1rem] font-normal">
               Technical Support –{" "}
               <strong>Vanguard Screening Solutions Inc.</strong>
-            </h6>
-            <p className="font-Inter text-[.9rem] font-normal mt-2">
+            </p>
+            <p className="font-Inter text-[1rem] font-normal mt-2">
               Provided end-to-end technical assistance for candidates completing
               onboarding forms through the <strong>TYDY platform</strong>,
               ensuring a smooth and efficient user experience.
             </p>
-            <p className="font-Inter text-[.9rem] font-normal mt-2">
+            <p className="font-Inter text-[1rem] font-normal mt-2">
               <strong>Key Contributions & Achievements:</strong>
             </p>
-            <ul className="font-Inter text-[.9rem] font-normal mt-2">
+            <ul className="font-Inter text-[1rem] font-normal mt-2">
               <li className="mb-2">
                 Assisted candidates in troubleshooting technical issues.
               </li>
@@ -84,24 +84,24 @@ const Experience = ({ work1Pic, work2Pic, className="" }) => {
               isExpanded[1] ? "" : "line-clamp-6"
             }`}
           >
-            <h6 className="font-bold">Sales Clerk / Stock Crew</h6>
+            <h3 className="font-bold">Sales Clerk / Stock Crew</h3>
             <p className="font-normal">Uno Factory Outlet</p>
             <small className="text-gray-500 mt-1">
               <span className="ri-calendar-2-line mr-2"></span> April 2017 -
               July 2017
             </small>
-            <h6 className="font-Inter text-[.9rem] font-normal">
+            <p className="font-Inter text-[1rem] font-normal">
               Sales Clerk –<strong>Uno Factory Outlet</strong>
-            </h6>
-            <p className="font-Inter text-[.9rem] font-normal mt-2">
+            </p>
+            <p className="font-Inter text-[1rem] font-normal mt-2">
               Delivered excellent customer service while leveraging
               point-of-sale (POS) systems and inventory management tools to
               ensure smooth retail operations.
             </p>
-            <p className="font-Inter text-[.9rem] font-normal mt-2">
+            <p className="font-Inter text-[1rem] font-normal mt-2">
               <strong>Key Contributions & Achievements:</strong>
             </p>
-            <ul className="font-Inter text-[.9rem] font-normal mt-2 gap-2">
+            <ul className="font-Inter text-[1rem] font-normal mt-2 gap-2">
               <li className="mb-2">
                 Assisted customers in finding products by utilizing digital
                 catalog systems.

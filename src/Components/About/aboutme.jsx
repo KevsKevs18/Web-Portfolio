@@ -5,7 +5,8 @@ const aboutme = () => {
 
   return (
     <div className="m-4">
-      <div className={`transition-all ${isExpanded ? "" : "line-clamp-3"}`}>
+      <h6 className="w-full mb-2 text-[1.44rem] mm:text-[1.2rem] font-bold"><span className="ri-user-3-line mr-2"></span>About Me</h6>
+      <div className={`transition-all ${isExpanded ? "" : "line-clamp-3 lg:line-clamp-none"}`}>
         <p className="font-Inter text-[1rem]">
           I'm a Front-End Developer with a designer's eye, turning complex
           requirements into sleek, intuitive Uls using React, Ant Design, MUI,
@@ -23,7 +24,7 @@ const aboutme = () => {
         </p>
       </div>
       <button
-        className="text-blue-500 cursor-pointer hover:underline"
+        className="text-blue-500 cursor-pointer hover:underline lg:hidden"
         onClick={() => setExpanded(!isExpanded)}
       >
         {isExpanded ? "see less" : "see more.."}
