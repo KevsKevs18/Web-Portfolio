@@ -14,6 +14,7 @@ import Footer from "../Components/Footer.jsx";
 import Experience from "../Components/About/Experience.jsx";
 import Aboutbanner from "../Components/About/Aboutbanner.jsx";
 import { NavLink } from "react-router-dom";
+import AboutInfo from "../Components/About/AboutInfo.jsx";
 
 const About = () => {
  
@@ -28,20 +29,19 @@ const About = () => {
 
   return (
     <>
-      <div className="grid grid-cols grid-rows-[auto_auto] lg:grid-cols-[1fr_400px] lg:gap-2 items-center w-full min-h-screen mm:px-2 overflow-hidden">
-        <div className="flex h-full w-full flex-col">
-        <Aboutbanner />
-        <div className="grid grid-cols-1 grid-rows-auto w-full mm:mt-2 h-auto bg-white mm:rounded-xl">
-          <Aboutme/>
+      <div className="grid grid-cols mm:mt-4 grid-rows-[auto_auto] lg:gap-2 items-center lg:items-start w-full min-h-screen mm:px-2 overflow-hidden">
+        <div className="flex h-auto w-full flex-col bg-white mm:rounded-xl">
+        <AboutInfo />
+        
           <ul className="flex w-full pb-4 mt-4 mm:px-4 lg:hidden">
             {buttons.map ((btn, id)=> (
-            <li key={btn.id} onClick={()=> { setIsActive(btn.id)}} className={`mr-2 w-full hover:text-greenFont flex sm:mb-4 cursor-pointer font-medium justify-center text-[1rem] ${active === btn.id ? "border-b-[2px] border-black pb-2" : "none"}`}>{btn.label}</li>
+            <li key={btn.id} onClick={()=> { setIsActive(btn.id)}} className={`mr-2 w-full hover:text-greenFont flex sm:mb-4 cursor-pointer font-medium justify-center text-[1rem] ${active === btn.id ? "underline underline-offset-8 decoration-4 decoration-greenFont" : "none"}`}>{btn.label}</li>
             ))}
           </ul>
         </div>
-        </div>
+    
 
-            <div className="flex  lg:flex-col lg:gap-2 justify-center w-full mm:mt-2 lg:mt-4 rounded-lg h-full">
+            <div className="flex  lg:gap-2 justify-center w-full mm:mt-2 lg:mt-0 rounded-lg h-full">
               <div className="w-full h-full  flex flex-col bg-white rounded-xl pt-2 hidden lg:flex">
                 <h6 className="font-bold text-[1.22rem] ml-4 mb-2"><span className="ri-book-open-line mr-2"></span>Education</h6>
              <Education className="" tcuPic={tcu} morehPic={moreh}/>
@@ -51,7 +51,7 @@ const About = () => {
                <h6 className="font-bold text-[1.22rem] ml-4 mb-2"><span className="ri-computer-line mr-2"></span>Work Experience</h6>
              <Experience className="" work1Pic={VSSI} work2Pic={UNO}/>
              </div>
-              <div className="bg-white w-full h-full rounded-xl lg:hidden">
+              <div className="bg-white w-full h-full mm:rounded-xl lg:hidden">
                 {active === "B" && <Education className="lg:hidden" tcuPic={tcu} morehPic={moreh}/>}
                 {active === "C" && <Experience className="lg:hidden" work1Pic={VSSI} work2Pic={UNO}/>}
                 

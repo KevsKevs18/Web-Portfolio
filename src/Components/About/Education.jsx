@@ -10,7 +10,7 @@ const Education = ({ tcuPic, morehPic, className="" }) => {
   };
 
   return (
-    <div className={`flex flex-col gap-2 my-3 w-full min-h-[18rem] md:min-h-[16rem] lg:min-h-[18rem] items-center px-4 ${className}`}>
+    <div className={`flex flex-col gap-2 my-3 w-full h-full md:min-h-[16rem] lg:min-h-[18rem] items-center px-4 ${className}`}>
       <div className="flex gap-2 min-h-[9rem] w-full">
         <img
           src={tcuPic}

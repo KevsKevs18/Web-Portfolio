@@ -20,7 +20,7 @@ function App() {
     <>
       <Router>
         <RedirectOnRefresh/>
-        <div className="flex flex-row w-full min-h-screen bg-bodycolor pb-2 lg:rounded-xl">
+        <div className="flex flex-row w-full min-h-screen bg-bodycolor mm:pb-2 lg:rounded-xl">
           <Sidebar isOpen={isOpen} closeNav={closeNav} openNav={openNav}/>
           <main className={`flex flex-col items-center w-full min-h-screen overflow-hidden flex-1 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
             <Navheader openNav={openNav}  className="mm:hidden"/>
