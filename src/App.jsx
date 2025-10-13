@@ -1,7 +1,7 @@
 import Sidebar from "./Components/Sidebar.jsx";
 import Mainhome from "./Pages/Mainhome.jsx";
 import Resume from "./Pages/Resume.jsx";
-import Projects from "./Pages/Projects.jsx"
+import Allprojects from "./Pages/Allprojects.jsx"
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import About from "./Pages/About.jsx"
@@ -20,7 +20,7 @@ function App() {
     <>
       <Router>
         <RedirectOnRefresh/>
-        <div className="flex flex-row w-full min-h-screen bg-bodycolor mm:pb-2 lg:rounded-xl">
+        <div className="flex flex-row w-full min-h-screen bg-bodycolor mm:pb-2 mlg:rounded-xl">
           <Sidebar isOpen={isOpen} closeNav={closeNav} openNav={openNav}/>
           <main className={`flex flex-col items-center w-full min-h-screen overflow-hidden flex-1 ${isOpen ? 'blur-sm' : 'none'}`} onClick={()=>{ if (isOpen) setIsOpen(false);}}>
             <Navheader openNav={openNav}  className="mm:hidden"/>
@@ -29,7 +29,7 @@ function App() {
               <Route path="/" element={<Mainhome openNav={openNav}/>}/>
               <Route path="/resume" element={<Resume/>} />
               <Route path="/about" element={<About/>} />
-              <Route path="/projects" element={<Projects/>} />
+              <Route path="/projects" element={<Allprojects/>} />
             </Routes>
           </main>
         </div>

@@ -50,7 +50,7 @@ const Mainhome = ({ openNav }) => {
          title="Features"
          h1Class="text-greenFont ml-2"
           iconClass="ri-pushpin-2-line mr-2"
-          className="bg-white h-[30rem] md:h-[18rem] gap-2 sm:h-[12rem] mm:rounded-xl"
+          className="bg-white h-[30rem] md:h-[18rem] gap-2 sm:h-[18rem] mm:rounded-xl"
         >
           <Features />
         </Wrapper>
@@ -63,7 +63,7 @@ const Mainhome = ({ openNav }) => {
         {/* Footer, Expertise */}
       <div className="grid grid-cols-1 w-full lg:grid-rows-[330px_auto] h-auto mm:gap-2 ">
         <Myskills/>
-        <Footer />
+        <Footer className="lg:h-[15rem]"/>
 
       </div>
       </div>

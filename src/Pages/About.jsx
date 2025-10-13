@@ -1,10 +1,4 @@
 import React, { useState } from "react";
-import Wrapper from "../Components/Wrapper.jsx";
-import Profile from "../Components/About/profile.jsx";
-import Aboutme from "../Components/About/aboutme.jsx";
-import Features from "../Components/Home/Features.jsx";
-import Certificates from "../Components/About/Certificates.jsx";
-import profile from "../assets/Kevin.JPG";
 import tcu from "../assets/TCU.png";
 import moreh from "../assets/Moreh.png";
 import VSSI from "../assets/VSSI.jpg";
@@ -12,8 +6,6 @@ import UNO from "../assets/UNO.jpg";
 import Education from "../Components/About/Education.jsx";
 import Footer from "../Components/Footer.jsx";
 import Experience from "../Components/About/Experience.jsx";
-import Aboutbanner from "../Components/About/Aboutbanner.jsx";
-import { NavLink } from "react-router-dom";
 import AboutInfo from "../Components/About/AboutInfo.jsx";
 
 const About = () => {
@@ -29,7 +21,7 @@ const About = () => {
 
   return (
     <>
-      <div className="grid grid-cols mm:mt-4 grid-rows-[auto_auto] lg:gap-2 items-center lg:items-start w-full min-h-screen mm:px-2 overflow-hidden">
+      <div className="grid grid-cols mm:mt-4 grid-rows-[auto_auto] mm:gap-2 items-center lg:items-start w-full min-h-screen mm:px-2 overflow-hidden">
         <div className="flex h-auto w-full flex-col bg-white mm:rounded-xl">
         <AboutInfo />
         
@@ -41,7 +33,7 @@ const About = () => {
         </div>
     
 
-            <div className="flex  lg:gap-2 justify-center w-full mm:mt-2 lg:mt-0 rounded-lg h-full">
+            <div className="flex  lg:gap-2 justify-center w-full rounded-lg h-full">
               <div className="w-full h-full  flex flex-col bg-white rounded-xl pt-2 hidden lg:flex">
                 <h6 className="font-bold text-[1.22rem] ml-4 mb-2"><span className="ri-book-open-line mr-2"></span>Education</h6>
              <Education className="" tcuPic={tcu} morehPic={moreh}/>
@@ -58,39 +50,9 @@ const About = () => {
               </div>
 
             </div>
-
+            <Footer className="lg:h-[12rem]"/>
       </div>
-      {/* 
-
-         <Wrapper
-          title="Certificates"
-          iconClass="ri-medal-line"
-          className="min-h-[22rem] md:min-h-[18rem]"
-        >
-          <Certificates certPic={profile} />
-        </Wrapper>
-
-
-      <div className="flex flex-col w-full min-h-[35rem] lg:min-h-screen lg:w-[45rem] lg:ml-4">
-        <Wrapper
-          title="Education"
-          iconClass="ri-book-open-line"
-          className="min-h-[22rem] md:min-h-[18rem] lg:mt-0"
-        >
-          <Education tcuPic={tcu} morehPic={moreh} />
-        </Wrapper>
-        
-        <Wrapper
-          title="Experience"
-          iconClass="ri-user-follow-line"
-          className="min-h-[22rem] md:min-h-[18rem]"
-        >
-          
-          <Experience work1Pic={VSSI} work2Pic={UNO}/>
-        </Wrapper>
-        <Footer />
-      </div>
-      */}
+     
     </>
   );
 };

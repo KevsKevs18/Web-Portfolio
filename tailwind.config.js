@@ -45,8 +45,9 @@ export default {
           sm: '500px', //Small tablets
           mm: '640px', //Medium tablets
           md: '768px', //tablets
-          lg: '1024px', //laptop
-          xl: '1280px', //Desktops
+          mlg: '1024px',//laptop
+          lg: '1280px', //Desktops
+          
       },
       backgroundImage:{
           'svg-comp-guy': "url('assets/codingart.png')",

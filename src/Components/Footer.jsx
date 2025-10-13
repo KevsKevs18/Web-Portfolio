@@ -3,9 +3,9 @@ import facebook from "../assets/facebook.svg";
 import github from "../assets/github.svg";
 import email from "../assets/gmail.svg";
 
-const Footer = () => {
+const Footer = ({className}) => {
   return (
-    <div className="w-full min-h-[10rem] lg:h-[15rem] bg-white pt-4 md:pt-0 flex flex-col mm:rounded-xl">
+    <div className={`w-full min-h-[10rem] bg-white flex flex-col mm:rounded-xl ${className}`}>
       <h6 className="text-[1.5rem] text-greenFont m-2 font-bold w-full flex">
         Get in touch
       </h6>
