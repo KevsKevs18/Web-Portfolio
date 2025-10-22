@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import Maincard from "../Components/Home/Maincard.jsx";
 import Features from "../Components/Home/Features.jsx";
 import Footer from "../Components/Footer.jsx";
-
 import Wrapper from "../Components/Wrapper.jsx";
 import Profile from "../Components/Home/Profile.jsx";
 import Navheader from "../Components/Navheader.jsx";
-import Contribution from "../Components/Projects/Contribution.jsx";
+import Contribution from "../Components/Home/Contribution.jsx";
 import Myskills from "../Components/Home/Myskills.jsx";
 import Myexpertise from "../Components/Home/Myexpertise.jsx";
 import Resumemodal from "../Modal/Resumemodal.jsx";
@@ -45,12 +44,12 @@ const Mainhome = ({ openNav }) => {
 
           {/* Features, Contributions, Skills */}
           
-          <div className="grid grid-cols-1  mm:gap-2 overflow-hidden">
+          <div className="grid grid-cols-1 grid-rows-auto  mm:gap-2 overflow-hidden">
          <Wrapper
          title="Features"
          h1Class="text-greenFont ml-2"
           iconClass="ri-pushpin-2-line mr-2"
-          className="bg-white h-[30rem] md:h-[18rem] gap-2 sm:h-[18rem] mm:rounded-xl"
+          className="bg-white h-auto md:h-[18rem] gap-2 sm:h-[18rem] mm:rounded-xl"
         >
           <Features />
         </Wrapper>

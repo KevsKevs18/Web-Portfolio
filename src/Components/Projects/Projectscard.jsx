@@ -24,20 +24,14 @@ const Projectscard = () => {
   };
 
   return (
-    <div className="w-full h-auto p-2 gap-2 grid grid-rows-auto mm:grid-cols-2 lg:grid-cols-4 mm:px-0">
+    <div className="w-full p-2 gap-2 grid grid-rows-auto mm:grid-cols-2 lg:grid-cols-4 mm:px-0">
       {projectList.map((list, index) => (
         <div
           key={index}
-          className="bg-white rounded-xl w-full h-auto px-4 py-2 flex flex-col items-start"
+          className="bg-white rounded-xl w-full h-full px-4 py-2 flex flex-col justify-start"
         >
-          <div className="flex w-full justify-between items-center">
-            <h6 className="text-[1.2rem] font-medium">{list.title}</h6>
-            <span className="ri-external-link-line text-[1.2rem]"></span>
-          </div>
-          <p className="text-gray-g mb-2">
-            {list.description}
-          </p>
-          <div className="w-full h-full overflow-hidden rounded-lg">
+    <div className="w-full h-auto flex flex-col">
+           <div className="w-full h-full overflow-hidden rounded-lg mb-2">
             <img
               src={list.img}
               alt="sample"
@@ -45,6 +39,15 @@ const Projectscard = () => {
               className="aspect-[16/9] rounded-lg transition-transform hover:scale-105 duration-300 cursor-pointer"
             />
           </div>
+          <div className="flex w-full justify-between items-center">
+            <h6 className="text-[1.2rem] md:text-[1rem] font-medium">{list.title}</h6>
+            <span className="ri-external-link-line text-[1.2rem] cursor-pointer hover:text-blue-300"  onClick={() => clickProj(list.link)}></span>
+          </div>
+          <p className="text-gray-g mb-2 md:text-[.9rem]">
+            {list.description}
+          </p>
+          </div>
+         
         </div>
       ))}
     </div>

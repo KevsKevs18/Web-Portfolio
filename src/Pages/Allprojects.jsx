@@ -9,9 +9,9 @@ const Allprojects = () => {
    title="Project List"
    iconClass="ri-pushpin-line"
    h1Class="ml-2"
-   className='bg-white pb-4 mm:rounded-xl'
+   className='bg-white pb-2 mm:rounded-xl '
    >
-    <p className='ml-2 text-gray-g'>Here is a list of projects that i have created</p>
+    <p className='ml-2 mt-2 text-gray-g mm'>Here is a list of projects that i have created</p>
    </Wrapper>
 
     <Projectscard/>

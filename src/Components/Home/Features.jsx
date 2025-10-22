@@ -21,9 +21,9 @@ const Features = () => {
       {featureProject.map ((proj, index) => (
       
         <div key={index} onClick={()=> clickProj(proj.link)} className="h-full flex flex-col p-2 rounded-xl justify-center items-center w-full">
-         <p className="font-bold font-Inter text-black text-[1rem]">{proj.title}</p>
+         <p className="font-bold font-Inter mb-2 text-black text-[1rem]">{proj.title}</p>
           <div className="w-full h-full rounded-lg overflow-hidden">
-          <div className="w-full h-full  rounded-lg flex bg-center bg-no-repeat justify-center transition-transfrom hover:scale-105 duration-300 cursor-pointer"
+          <div className="aspect-[16/9]  rounded-lg flex bg-center bg-no-repeat justify-center transition-transfrom hover:scale-105 duration-300 cursor-pointer"
           style={{backgroundImage: `url(${proj.img})`,
                   backgroundSize: "100% 100%"
                  }}

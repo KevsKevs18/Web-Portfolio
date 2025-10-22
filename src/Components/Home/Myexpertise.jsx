@@ -6,19 +6,19 @@ const Myexpertise = () => {
     {
       title: "Web Development",
       description:
-        "I build web apps from scratch using React. clean, responsive, and built to perform. Whether it's a landing page or a full-scale platform, I make sure it looks great and works even better.",
+        "I create web applications from the ground up using React — clean, responsive, and optimized for performance. From sleek landing pages to full-scale platforms, I ensure every project looks exceptional and functions flawlessly.",
       icon: "ri-computer-line"
     },
      {
       title: "UI / UX Design",
       description:
-        "Design isn’t just about looks it’s about how it feels. I focus on clean, user-friendly interfaces that make sense and look polished on any screen.",
+        "Design goes beyond visuals. it’s about usability and experience. I build clean, responsive interfaces that work seamlessly across all devices.",
       icon: "ri-computer-line"
     },
      {
       title: "Graphic Design",
       description:
-        "Designing eye-catching visuals is my thing. ebooks, posters, infographics, you name it. I blend tools like Photoshop and Publisher to bring creative ideas to life.",
+        "I specialize in crafting striking visual designs — whether it’s eBooks, posters, or infographics. I transform concepts into compelling visuals.",
       icon: "ri-computer-line"
     },
   ];
@@ -41,9 +41,7 @@ const Myexpertise = () => {
             <small className="mt-1 font-normal text-[.9rem] md:text-[.8rem] text-white">
              {expert.description}
             </small>
-            <button className="text-[.9rem] md:text-[.8rem] cursor-pointer font-bold mt-2 text-yellowFont border-b-[2px] border-white pb-[1px]">
-              View Sample <span className="ri-arrow-right-s-fill"></span>
-            </button>
+            
           </div>))}
         </div>
       </div>
